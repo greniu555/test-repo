@@ -7,6 +7,6 @@ resource "aws_instance" "poc-server" {
 	instance_type="t2.micro"
 
 	tags = {
-	Name = "poc-server1"
+	Name = "blablabla"
 	}
 }
