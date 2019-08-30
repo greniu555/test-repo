@@ -7,12 +7,12 @@ resource "aws_instance" "poc-server" {
 	user_data = <<-EOF
 		#! /bin/bash
         
-        echo "<h1>Welcome to Greniu's POC Web Server</h1>" > index.html
+        echo "<h1>Welcome to Tom's POC Web Server</h1>" > index.html
         nohup busybox httpd -f -p 8888 &
 	EOF
 
 	tags = {
-	Name = "Greniu's webserver"
+	Name = "Tom's webserver"
 	}
 	
 }
